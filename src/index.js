@@ -58,23 +58,7 @@ function init(){
     })
 }
 
-const frame = () => {
 
-    Draw.fillRect(0, 0, canvas.width, canvas.height, Draw.WHITE);
-    Draw.strokeRect(0, 0, canvas.width, canvas.height, Draw.BLACK);
-
-    Draw.drawLine(30, canvas.height - 30, canvas.width - 30, canvas.height - 30);
-    Draw.drawLine(30, canvas.height - 30, 30, 30);
-
-    for(let i = 0; i < points.length; i++){
-        let point = points[i];
-        Draw.fillCircle(point.x, point.y, 3, Draw.BLACK);
-    }
-
-    Draw.drawFunction(op.func);
-    if(!op.finished)
-        op.epoch(points);
-}
 
 const submitPoint = () => {
     let input = document.getElementById("input").value;
