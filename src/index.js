@@ -1,4 +1,4 @@
-import {Draw} from "./draw";
+/*import {Draw} from "./draw";
 import { Point } from "./point";
 import { Optimizer } from "./optimizer";
 
@@ -94,4 +94,4 @@ const submitPoint = () => {
     document.getElementById("input").value = "";    
 }
 init();
-setInterval(frame, 20);
+setInterval(frame, 20);*/

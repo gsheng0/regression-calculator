@@ -1,4 +1,4 @@
-import {Point} from "./point";
+/*import {Point} from "./point";
 
 export class Draw {
     static ctx = undefined;
@@ -63,4 +63,4 @@ export class Draw {
             previous = point;
         }
     }
-}
+}*/
