@@ -94,4 +94,4 @@ const submitPoint = () => {
     document.getElementById("input").value = "";    
 }
 init();
-setInterval(frame, 20);
+//setInterval(frame, 20);
