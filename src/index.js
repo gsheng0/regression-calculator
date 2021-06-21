@@ -60,22 +60,6 @@ function init(){
 
 
 
-const submitPoint = () => {
-    let input = document.getElementById("input").value;
-    let out = "";
-    for(let i = 0; i < input.length; i++){
-        if(input.charAt(i) === ',' || (input.charCodeAt(i) >= "0".charCodeAt(0) && input.charCodeAt(i) <= "9".charCodeAt(0)  ))
-            out += input.charAt(i);
-    }
-    let nums = out.split(",");
-    if(nums.length < 2)
-        return;
-    let x = parseInt(nums[0], 10);
-    let y = parseInt(nums[1], 10);
-    console.log(new Point(x, y));
 
-    points.push(new Point(x, y, Point.GRAPH).getScreenPoint())
-    document.getElementById("input").value = "";    
-}
 //init();
 //setInterval(frame, 20);
