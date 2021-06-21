@@ -93,5 +93,5 @@ const submitPoint = () => {
     points.push(new Point(x, y, Point.GRAPH).getScreenPoint())
     document.getElementById("input").value = "";    
 }
-init();
+//init();
 //setInterval(frame, 20);
