@@ -118,7 +118,7 @@ export class Optimizer{
             if(power > 1)
                 text += coefficient + "x^" + power + " + ";
             else if(power === 1){
-                text += coefficient + "x" + " + ";
+                text += coefficient + "x + ";
             }
             else if(power === 0){
                 text += coefficient;
