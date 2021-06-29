@@ -2,12 +2,11 @@ import {Draw} from "./draw";
 import { Point } from "./point";
 import { Optimizer } from "./optimizer";
 
-var canvas, ctx, location, points, op;
+var canvas, location, points, op;
 
 function init(){   
 
     canvas = document.getElementById("myCanvas");
-    ctx = canvas.getContext("2d");
     op = new Optimizer();
     console.log(op.applyFunction(1));
     Point.CANVAS_HEIGHT = canvas.height;
