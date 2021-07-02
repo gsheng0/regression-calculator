@@ -4,12 +4,13 @@ export class Optimizer{
     static PRESET_0 = [1];
     static PRESET_1 = [1, 1];
     static PRESET_2 = [0.0005, 0.0005, 0.0005];
-    static PRESETS = [Optimizer.PRESET_0, Optimizer.PRESET_1, Optimizer.PRESET_2];
+    static PRESET_3 = [0.0000005, 0.0000005, 0.0000005, 0.0000005];
+    static PRESETS = [Optimizer.PRESET_0, Optimizer.PRESET_1, Optimizer.PRESET_2, Optimizer.PRESET_3];
     
     constructor()
     {    
         this.runs = 5000;
-        this.alpha = [0.01, 0.0000002, 0.000000000001];
+        this.alpha = [0.01, 0.0000002, 0.000000000001, 0.000000000000000000000001 ];
         this.lastRun = 0;
         this.finished = true;
         this.minCost = 1000000000;

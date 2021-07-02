@@ -55,6 +55,8 @@ function init(){
         op.degree = 2;
         op.func = Optimizer.PRESETS[2];
     })
+    
+
 }
 
 const frame = () => {

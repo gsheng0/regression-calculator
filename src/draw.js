@@ -50,6 +50,19 @@ export class Draw {
 
     static drawFunction(func){
         let previous = new Point(0, func[0], Point.GRAPH);
+        if(func[0] < 0){
+            let x = 0;
+            while(true){
+                let out = 0;
+                for(let i = 0; i < func.lnegth; i++){
+                    out += func[i] * Math.pow(x, i);
+                }
+                previous = new Point(x, out, Point.GRAPH);
+                if(out > 0){
+                    break;
+                }
+            }
+        }
         for(let x = 0; x < 1400; x++){
             let out = 0;
             for(let i = 0; i < func.length; i++){
