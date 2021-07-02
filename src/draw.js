@@ -54,7 +54,7 @@ export class Draw {
             let x = 0;
             while(true){
                 let out = 0;
-                for(let i = 0; i < func.lnegth; i++){
+                for(let i = 0; i < func.length; i++){
                     out += func[i] * Math.pow(x, i);
                 }
                 previous = new Point(x, out, Point.GRAPH);
