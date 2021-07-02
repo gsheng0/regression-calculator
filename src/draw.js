@@ -61,6 +61,7 @@ export class Draw {
                 if(out > 0){
                     break;
                 }
+                x++;
             }
         }
         for(let x = 0; x < 1400; x++){
