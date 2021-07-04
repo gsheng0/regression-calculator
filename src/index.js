@@ -64,13 +64,31 @@ const frame = () => {
     Draw.fillRect(0, 0, canvas.width, canvas.height, Draw.WHITE);
     Draw.strokeRect(0, 0, canvas.width, canvas.height, Draw.BLACK);
 
-    Draw.drawLine(30, canvas.height - 30, canvas.width - 30, canvas.height - 30);
+    Draw.drawLine(30, canvas.height - 30, canvas.width - 30, canvas.height - 30, Draw.BLACK);
     Draw.drawLine(30, canvas.height - 30, 30, 30);
 
     for(let i = 0; i < points.length; i++){
         let point = points[i];
         Draw.fillCircle(point.x, point.y, 3, Draw.BLACK);
     }
+
+    for(let x = 100; x < 1500; x+=100){
+        let point1 = new Point(x, 0, Point.GRAPH);
+        let point2 = new Point(x, 800, Point.GRAPH);
+        point1 = point1.getScreenPoint();
+        point2 = point2.getScreenPoint();
+        Draw.drawLine(point1.x, point1.y, point2.x, point2.y, "lightgray");
+    }
+
+    for(let y = 100; y < 800; y+=100){
+        let point1 = new Point(0, y, Point.GRAPH);
+        let point2 = new Point(1400, y, Point.GRAPH);
+        point1 = point1.getScreenPoint();
+        point2 = point2.getScreenPoint();
+        Draw.drawLine(point1.x, point1.y, point2.x, point2.y, "lightgray");
+    }
+
+    
 
     Draw.drawFunction(op.func);
     if(!op.finished)

@@ -73,7 +73,7 @@ export class Draw {
             if(out < 0)
                 continue;
             Draw.fillCircle(point.getScreenPoint().x, point.getScreenPoint().y, 0.25, Draw.BLACK);
-            Draw.drawLine(previous.getScreenPoint().x, previous.getScreenPoint().y, point.getScreenPoint().x, point.getScreenPoint().y);
+            Draw.drawLine(previous.getScreenPoint().x, previous.getScreenPoint().y, point.getScreenPoint().x, point.getScreenPoint().y, Draw.BLACK);
             previous = point;
         }
     }
